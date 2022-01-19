@@ -8,13 +8,13 @@ const Index = () => {
       </Head>
       <div className="space-y-4">
         <div className="font-semibold text-base">Hi there, my name is Dylan Taylor.</div>
-        <div>I'm a software engineer in Washington, DC.</div>
+        <div>I'm a fullstack engineer in Washington, DC.</div>
         <div>
           I help teams build performant software systems that are approachable to fresh eyes,
           maintainable down the road, and flexible to evolving needs.
         </div>
         <div>
-          With 7+ years of fullstack experience, here are some of the technologies I often use:
+          With 7+ years of industry experience, these are some of the technologies I most often use:
         </div>
         <div className="flex flex-col md:flex-row gap-4 font-mono text-purple-300 text-sm">
           <div>
