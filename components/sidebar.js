@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
@@ -8,7 +10,7 @@ const Sidebar = () => {
           <a>dt</a>
         </Link>
       </div>
-      <div className="flex flex-row sm:flex-col sm:space-x-0 sm:space-y-2 border-gray-700 border-b pb-6 sm:border-b-0 sm:pb-0 text-sm font-mono space-x-4">
+      <div className="flex flex-row md:flex-col md:space-x-0 md:space-y-2 border-gray-700 border-b pb-6 md:border-b-0 md:pb-0 text-sm font-mono space-x-4">
         <NavItem>
           <Link href="/">
             <a>Home</a>
@@ -29,6 +31,14 @@ const Sidebar = () => {
             <a>Contact</a>
           </Link>
         </NavItem>
+        <div className="space-x-2">
+          <a href="https://www.linkedin.com/in/dylan-taylor-7b163884/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/dylanjt">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
       </div>
       <style>{`
         .glow {

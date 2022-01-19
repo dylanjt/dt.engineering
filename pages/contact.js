@@ -15,6 +15,13 @@ const Contact = () => {
         <div>
           <code className="bg-gray-800 p-2 text-xs shadow">ZHlsYW5AZHQuZW5naW5lZXJpbmc=</code>
         </div>
+        <div>
+          <span className="italic">What in tarnation?!</span> You can always
+          <a className="ml-1 underline" href="https://www.linkedin.com/in/dylan-taylor-7b163884/">
+            connect with me on LinkedIn
+          </a>
+          .
+        </div>
       </div>
     </>
   )

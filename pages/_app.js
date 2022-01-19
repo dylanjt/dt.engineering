@@ -16,12 +16,12 @@ const App = ({ Component, pageProps }) => {
           <Particles options={particlesConfig} />
         </div>
 
-        <div className="sm:container sm:mx-auto p-4 sm:p-0 mt-0 sm:mt-24 relative z-10 text-gray-50">
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-16">
+        <div className="md:container md:mx-auto p-4 md:p-0 mt-0 md:mt-24 relative z-10 text-gray-50">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-16">
             <div className="">
               <Sidebar />
             </div>
-            <div className="pt-1.5 sm:w-2/3">
+            <div className="pt-1.5 md:w-2/3">
               <Component {...pageProps} />
             </div>
           </div>
