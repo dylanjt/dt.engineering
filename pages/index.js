@@ -1,17 +1,16 @@
-import Head from 'next/head'
+import Link from 'next/link'
 
-const Index = () => {
+const Index = ({ form }) => {
   return (
     <>
-      <Head>
-        <title>DT</title>
-      </Head>
       <div className="space-y-4">
         <div className="font-semibold text-base">Hi there, my name is Dylan Taylor.</div>
         <div>I'm a fullstack engineer in Washington, DC.</div>
         <div>
-          I help teams build performant software systems that are approachable to fresh eyes,
-          maintainable down the road, and flexible to evolving needs.
+          I help teams build performant cloud applications that are approachable to newly hired
+          engineers, maintainable down the road, and flexible to evolving needs. For most SaaS
+          enterprises, the architecture and quality of their code serves as the foundation of
+          company growth for years to come. Engineering decisions matter.
         </div>
         <div>
           With 7+ years of industry experience, these are some of the technologies I most often use:
@@ -22,7 +21,7 @@ const Index = () => {
             <ul>
               <li>React</li>
               <li>Next.js</li>
-              <li>Redux</li>
+              <li>Typescript</li>
               <li>Tailwind CSS</li>
             </ul>
           </div>
@@ -31,10 +30,11 @@ const Index = () => {
             <ul>
               <li>Node.js</li>
               <li>Rust</li>
+              <li>Go</li>
             </ul>
           </div>
           <div>
-            <span className="font-semibold underline">Persistence</span>
+            <span className="font-semibold underline">Data Store</span>
             <ul>
               <li>PostgreSQL</li>
               <li>Elasticsearch</li>
@@ -44,11 +44,26 @@ const Index = () => {
           <div>
             <span className="font-semibold underline">Cloud</span>
             <ul>
-              <li>AWS (Fargate, Lambda, SQS)</li>
-              <li>GCP (Cloud Run, Tasks)</li>
+              <li>AWS (Fargate, Lambda, S3, SQS, & more)</li>
+              <li>GCP (Cloud Run, Tasks, & more)</li>
               <li>GitHub Actions</li>
             </ul>
           </div>
+        </div>
+        <div>
+          By leveraging battle-tested and industry-standard technologies like the ones above, teams
+          can tap into a vibrant ecosystem of open source tooling, and unlock a wide pool of talent
+          for future hiring. Combined with thoughtful development patterns and forward-leaning
+          structural decisions, they can also ensure a solid proprietary core that will continuously
+          meet business goals in tandem with company growth.
+        </div>
+        <div>
+          <span className="font-semibold">Are you looking for engineering leadership?</span> That's
+          what I do.
+          <Link href="/contact">
+            <a className="ml-1 underline">Get in touch</a>
+          </Link>
+          .
         </div>
       </div>
     </>

@@ -1,22 +1,19 @@
 import Head from 'next/head'
 
-const Contact = () => {
+import { formium } from '../lib/formium'
+import GetInTouchForm from '../components/get-in-touch-form'
+
+const Contact = ({ form }) => {
   return (
     <>
       <Head>
-        <title>Contact - DT</title>
+        <title>Contact</title>
       </Head>
       <div className="space-y-4">
         <div className="font-semibold text-base">Contact</div>
+        <GetInTouchForm form={form} />
         <div>
-          I am generally open to new opportunities, projects, and other inquiries. To limit spam, my
-          email is encoded in the base64 string below.
-        </div>
-        <div>
-          <code className="bg-gray-800 p-2 text-xs shadow">ZHlsYW5AZHQuZW5naW5lZXJpbmc=</code>
-        </div>
-        <div>
-          <span className="italic">What in tarnation?!</span> You can always
+          You can also
           <a className="ml-1 underline" href="https://www.linkedin.com/in/dylan-taylor-7b163884/">
             connect with me on LinkedIn
           </a>
@@ -28,3 +25,8 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const getStaticProps = async (context) => {
+  const form = await formium.getFormBySlug('get-in-touch')
+  return { props: { form } }
+}

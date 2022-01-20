@@ -51,3 +51,7 @@ test-timings.json
 
 # Cache
 *.tsbuildinfo
+
+# secrets
+.env
+.env.local

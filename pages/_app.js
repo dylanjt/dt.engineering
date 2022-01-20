@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import Particles from 'react-tsparticles'
 
 import 'tailwindcss/tailwind.css'
@@ -11,6 +12,10 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta name="theme-color" content="#111827" />
       </Head>
+      <NextSeo
+        title="Dylan Taylor"
+        description="Fullstack web engineer. I lead teams that build digital foundations for company growth."
+      />
       <div className="absolute min-h-screen w-screen overflow-hidden">
         <div className="fixed w-screen h-screen z-0 bg-gray-900">
           <Particles options={particlesConfig} />
